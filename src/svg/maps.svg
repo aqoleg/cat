@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<svg
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     version="1.1"
+     baseProfile="full"
+     viewBox="0 0 16 16"
+     preserveAspectRatio="xMidYMid meet"
+     >
+    <defs>
+        <path
+              id="path"
+              d="m 2,8
+                 a 6,6 0 0 0 12,0 a 6,6 0 0 0 -12,0
+                 M 4.5,6
+                 L 5.4,4.6 L 7.1,4.2 L 8,5 L 9.5,5 L 10,6 L 10.5,6.9 L 11.3,7.4 L 10,8.9
+                 L 10.2,10 L 9.8,10.3 L 9.8,11 L 9.2,11.9 L 8,12 L 7.4,10.1 L 7.6,9.3
+                 L 7.1,7.9 L 5.6,7.9 L 4.7,7.2 z"
+              />
+    </defs>
+    <g fill="white" fill-opacity="0.5">
+        <use xlink:href="#path" />
+    </g>
+    <g fill="none">
+        <use xlink:href="#path" stroke="black" stroke-width="0.4" stroke-linejoin="round" />
+    </g>
+</svg>

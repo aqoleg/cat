@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<svg
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     version="1.1"
+     baseProfile="full"
+     viewBox="0 0 16 16"
+     preserveAspectRatio="xMidYMid meet"
+     >
+    <defs>
+        <path 
+              id="path"
+              d="m 4,2
+                 l 4,4 l 4,-4 l 2,2 l -4,4 l 4,4 l -2,2 l -4,-4 l -4,4 l -2,-2 l 4,-4 l -4,-4 z"
+              />
+    </defs>
+    <g fill="white" fill-opacity="0.5">
+        <use xlink:href="#path" />
+    </g>
+    <g fill="none">
+        <use xlink:href="#path" stroke="black" stroke-width="0.4" />
+    </g>
+</svg>

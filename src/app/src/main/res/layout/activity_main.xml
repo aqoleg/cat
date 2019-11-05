@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="RtlHardcoded" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/mapView" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:id="@+id/localDistance" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_gravity="center_horizontal"
+                android:textColor="@color/colorMain" />
+        </FrameLayout>
+        <TextView android:id="@+id/totalDistance" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center_horizontal"
+            android:visibility="gone" android:textColor="@color/colorMain" />
+        <TextView android:id="@+id/zoom" android:layout_width="60dp" android:layout_height="wrap_content"
+            android:gravity="center_horizontal" android:textColor="@color/colorMain" />
+    </LinearLayout>
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left">
+        <ImageView android:id="@+id/exit" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:padding="8dp" android:src="@drawable/exit" android:contentDescription="@string/exit" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_gravity="bottom|right">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_gravity="right">
+            <ImageView android:id="@+id/zPlus" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:padding="8dp" android:src="@drawable/plus" android:contentDescription="@string/zPlus" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_gravity="right">
+            <ImageView android:id="@+id/zMinus" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:padding="8dp" android:src="@drawable/minus" android:contentDescription="@string/zMinus" />
+        </FrameLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView android:id="@+id/satellites" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:padding="8dp" android:src="@drawable/satellites"
+                android:contentDescription="@string/satellites" />
+            <ImageView android:id="@+id/selectTrack" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:padding="8dp" android:src="@drawable/tracks"
+                android:contentDescription="@string/selectTrack" />
+            <ImageView android:id="@+id/selectMap" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:padding="8dp" android:src="@drawable/maps"
+                android:contentDescription="@string/selectMap" />
+            <ImageView android:id="@+id/center" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:padding="8dp" android:src="@drawable/pointer" android:contentDescription="@string/center" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
