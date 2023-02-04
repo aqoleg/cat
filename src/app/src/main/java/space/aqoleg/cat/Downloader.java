@@ -40,6 +40,7 @@ class Downloader extends AsyncTask<Void, Void, Boolean> {
             connection = (HttpURLConnection) url.openConnection();
             connection.setConnectTimeout(7000);
             connection.setReadTimeout(15000);
+            connection.setRequestProperty("User-Agent", "cat");
             if (connection.getResponseCode() != HttpURLConnection.HTTP_OK) {
                 return false;
             }
