@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:layout_width="match_parent" android:layout_height="32dp" android:gravity="center"
+        android:text="@string/maps" android:textColor="@color/mainBlack" android:textSize="14sp"
+        android:typeface="monospace" android:textStyle="bold" />
+    <FrameLayout android:layout_width="match_parent" android:layout_height="1dp"
+        android:background="@color/mainBlack" />
+    <ListView android:id="@+id/list" android:layout_width="match_parent" android:layout_height="match_parent"
+        android:scrollbarThumbVertical="@color/mainBlack" android:scrollbarSize="4dp" android:divider="@null"
+        android:listSelector="@color/backgroundTransparent" />
+</LinearLayout>

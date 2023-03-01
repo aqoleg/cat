@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:layout_width="match_parent" android:layout_height="32dp" android:gravity="center"
+        android:text="@string/extra" android:textColor="@color/mainBlack" android:textSize="14sp"
+        android:typeface="monospace" android:textStyle="bold" />
+    <FrameLayout android:layout_width="match_parent" android:layout_height="1dp"
+        android:background="@color/mainBlack" />
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent"
+        android:scrollbarThumbVertical="@color/mainBlack" android:scrollbarSize="4dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:padding="8dp">
+            <FrameLayout android:id="@+id/frame" android:layout_height="160dp" android:layout_width="160dp"
+                android:layout_gravity="center_horizontal" />
+            <TextView android:id="@+id/satellites" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:paddingTop="12dp" android:textColor="@color/mainBlack"
+                android:textSize="14sp" android:typeface="monospace" />
+            <TextView android:id="@+id/location" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:paddingTop="12dp" android:textColor="@color/mainBlack"
+                android:textSize="14sp" android:typeface="monospace" />
+            <TextView android:id="@+id/track" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:paddingTop="12dp" android:textColor="@color/mainBlack" android:textColorLink="@color/mainBlack"
+                android:textSize="14sp" android:typeface="monospace" />
+            <TextView android:id="@+id/point" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:paddingTop="12dp" android:textColor="@color/mainBlack" android:textColorLink="@color/mainBlack"
+                android:textSize="14sp" android:typeface="monospace" />
+            <TextView android:id="@+id/tile" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:paddingTop="12dp" android:textColor="@color/mainBlack" android:textColorLink="@color/mainBlack"
+                android:textSize="14sp" android:typeface="monospace" />
+            <TextView android:id="@+id/cache" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:paddingTop="12dp" android:textColor="@color/mainBlack" android:textSize="14sp"
+                android:typeface="monospace" />
+            <TextView android:id="@+id/website" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:paddingTop="12dp" android:textColor="@color/mainBlack" android:textColorLink="@color/mainBlack"
+                android:textSize="14sp" android:typeface="monospace" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingTop="12dp"
+                android:text="@string/version" android:textColor="@color/mainBlack" android:textSize="14sp"
+                android:typeface="monospace" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,26 +1,38 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<svg
-     xmlns="http://www.w3.org/2000/svg"
-     version="1.1"
-     baseProfile="full"
-     viewBox="0 0 48 48"
-     preserveAspectRatio="xMidYMid meet"
-     >
-    <circle cx="24" cy="24" r="20.9" fill="white" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" preserveAspectRatio="xMidYMid meet">
+    <defs>
+        <radialGradient id="gradient" cx="0.5" cy="0.55" r="0.5" fx="0.47" fy="0.39">
+            <stop offset="0%" stop-color="#CCAF1E" />
+            <stop offset="10%" stop-color="#CCCC1E" />
+            <stop offset="20%" stop-color="#99B21A" />
+            <stop offset="30%" stop-color="#59B21A" />
+            <stop offset="40%" stop-color="#1AB21A" />
+            <stop offset="50%" stop-color="#1AB259" />
+            <stop offset="60%" stop-color="#1AB299" />
+            <stop offset="70%" stop-color="#1A8CB2" />
+            <stop offset="80%" stop-color="#1A4DB2" />
+            <stop offset="90%" stop-color="#271AB2" />
+            <stop offset="100%" stop-color="#661AB2" />
+        </radialGradient>
+    </defs>
+    <!-- white outline -->
+    <circle fill="white" cx="24" cy="24" r="20.9" />
+    <!-- space cat -->
+    <g stroke="black" stroke-width="1.5">
+        <path fill="url(#gradient)" d="M 10,35 L 16,17 21,25 27,25 32,17 38,35 A 17,17 0 0 1 10,35" />
+        <circle fill="white" cx="18.5" cy="33" r="4" />
+        <circle fill="white" cx="29.5" cy="33" r="4" />
+    </g>
+    <g fill="black">
+        <circle cx="18.5" cy="32.5" r="1" />
+        <circle cx="29.5" cy="32.5" r="1" />
+    </g>
+    <!-- black cirlce with pointer -->
     <g stroke="black" stroke-width="3">
         <circle fill="none" cx="24" cy="24" r="18.3" />
         <line x1="24" y1="5" x2="24" y2="10" />
         <line x1="24" y1="38" x2="24" y2="43" />
         <line x1="5" y1="24" x2="10" y2="24" />
         <line x1="38" y1="24" x2="43" y2="24" />
-    </g>
-    <g stroke="black" stroke-width="1.5">
-        <circle fill="none" cx="18.5" cy="33" r="4" />
-        <circle fill="none" cx="29.5" cy="33" r="4" />
-        <path fill="none" d="M 10,35 L 16,17 21,25 27,25 32,17 38,35" />
-    </g>
-    <g fill="black">
-        <circle cx="18.5" cy="32.5" r="1" />
-        <circle cx="29.5" cy="32.5" r="1" />
     </g>
 </svg>

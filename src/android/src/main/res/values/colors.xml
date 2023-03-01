@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="mainRed">#FA0505</color>
+    <color name="mainBlack">#000000</color>
+    <color name="tracksPurple">#EA04BC</color>
+    <color name="tracksTransparentPurple">#88EA04BC</color>
+    <color name="pointerTransparent">#30FFFFFF</color>
+    <color name="backgroundTransparent">#A0FFFFFF</color>
+</resources>

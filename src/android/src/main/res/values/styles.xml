@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="dialog">
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="android:windowBackground">@color/backgroundTransparent</item>
+    </style>
+    <style name="prompt" parent="dialog">
+        <item name="android:windowIsFloating">true</item>
+    </style>
+</resources>

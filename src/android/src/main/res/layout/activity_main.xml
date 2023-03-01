@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="RtlHardcoded, PxUsage" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/mapView" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_gravity="top|left">
+        <ImageView android:id="@+id/close" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:padding="8dp" android:src="@drawable/close" android:contentDescription="@string/closeHint" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_gravity="top|right">
+        <TextView android:id="@+id/zoom" android:layout_width="48dp" android:layout_height="wrap_content"
+            android:gravity="center_horizontal" android:textColor="@color/mainRed" android:textSize="16px"
+            android:typeface="monospace" android:textStyle="bold" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_gravity="top|center_horizontal">
+        <TextView android:id="@+id/totalDistance" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:gravity="center_horizontal" android:textColor="@color/mainRed"
+            android:textSize="16px" android:typeface="monospace" android:textStyle="bold" />
+        <TextView android:id="@+id/localDistance" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:gravity="center_horizontal" android:textColor="@color/mainRed"
+            android:textSize="16px" android:typeface="monospace" android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_gravity="bottom|right">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_gravity="right">
+            <ImageView android:id="@+id/zPlus" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:padding="8dp" android:src="@drawable/plus" android:contentDescription="@string/zPlusHint" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_gravity="right">
+            <ImageView android:id="@+id/zMinus" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:padding="8dp" android:src="@drawable/minus" android:contentDescription="@string/zMinusHint" />
+        </FrameLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView android:id="@+id/extra" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:padding="8dp" android:src="@drawable/extra" android:contentDescription="@string/extra" />
+            <ImageView android:id="@+id/tracks" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:padding="8dp" android:src="@drawable/tracks" android:contentDescription="@string/tracks" />
+            <ImageView android:id="@+id/maps" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:padding="8dp" android:src="@drawable/maps" android:contentDescription="@string/maps" />
+            <ImageView android:id="@+id/center" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:padding="8dp" android:src="@drawable/pointer" android:contentDescription="@string/centerMap" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
